@@ -1,0 +1,200 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  grid-template-rows: 4rem 22rem 45rem 15rem;
+  grid-template-areas: "header" "main" "menu" "footer";
+}
+
+.container .header {
+  background-color: black;
+  grid-area: header;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main {
+  background-color: #dadbf1;
+  grid-area: main;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menu {
+  background-color: white;
+  grid-area: menu;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  gap: 3rem;
+  row-gap: 5.5rem;
+}
+
+.footer {
+  background-color: black;
+  grid-area: footer;
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+@media (max-width: 768px) {
+  .container .menu .card {
+    width: 100%;
+    flex-wrap: wrap-reverse;
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container .header .logo {
+  color: white;
+  margin-left: 1rem;
+}
+.container .header .logo .imagen {
+  width: 3rem;
+  background-color: black;
+}
+.container .header .btn_1 {
+  padding: 0.35rem 0.4rem;
+  border-radius: 0.35rem;
+  background-color: black;
+  color: white;
+  margin: right 0;
+  border: solid 1px #dadbf1;
+}
+.container .header .btn_1:hover {
+  background-color: rgba(0, 0, 0, 0.623);
+  cursor: pointer;
+}
+.container .header .btn_2 {
+  padding: 0.35rem 0.4rem;
+  border-radius: 0.35rem;
+  background-color: #4C5FD5;
+  color: white;
+  margin-right: 1.5rem;
+  border: solid 1px #dadbf1;
+}
+.container .header .btn_2:hover {
+  cursor: pointer;
+  background-color: rgba(76, 94, 213, 0.7411764706);
+}
+
+.container .main {
+  font-size: 4rem;
+}
+
+.container .menu h3 {
+  font-size: 1.5rem;
+}
+
+.container .menu .card {
+  border: none;
+  width: 40%;
+}
+.container .menu .card .learn-more {
+  color: #4C5FD5;
+}
+.container .menu .card .learn-more:hover {
+  text-decoration: underline;
+}
+.container .menu .card .icono1 {
+  width: 4rem;
+}
+.container .menu .card .icono2 {
+  width: 4rem;
+}
+.container .menu .card .icono3 {
+  width: 4rem;
+}
+.container .menu .card .icono4 {
+  width: 4rem;
+  height: 4rem;
+}
+.container .menu .card .icono5 {
+  width: 4rem;
+}
+.container .menu .card .icono6 {
+  width: 4rem;
+}
+
+.container .menu .uno {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.container .menu .dos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+.container .menu .tres {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.container .menu .cuatro {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.25rem;
+}
+.container .menu .cinco {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.container .menu .seis {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.container .footer {
+  width: 100%;
+  color: white;
+}
+.container .footer ul {
+  list-style: none;
+  text-align: start;
+}
+.container .footer ul li:hover {
+  text-decoration: underline;
+}
+.container .footer .abstract {
+  margin-left: 1.5rem;
+}
+
+.company p:hover {
+  text-decoration: underline;
+}
+
+.container .footer .titulo {
+  margin-top: 2rem;
+  height: 13rem;
+}
+
+.container .footer .company h5 {
+  padding-left: 1.9rem;
+}
+.container .footer .company p {
+  padding-left: 1.9rem;
+}
+
+/*# sourceMappingURL=styles.css.map */

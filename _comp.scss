@@ -1,0 +1,98 @@
+$color-main: #dadbf1;
+
+@mixin btn-base{
+    padding: 0.35rem 0.4rem;
+    border-radius: 0.35rem;
+}
+
+@mixin para-iconos{display: flex;
+    flex-direction: row;
+    align-items: center;}
+
+body{margin: 0;
+padding: 0;}
+
+.container{
+    .header{
+        .logo{color: white;
+            margin-left: 1rem;
+            .imagen{width: 3rem;
+                background-color: black;}} 
+        .btn_1{
+            @include btn-base();
+            background-color: black;
+            color: white;
+            margin: right 0;
+            border: solid 1px $color-main;
+            &:hover{
+            background-color: rgba(0, 0, 0, 0.623);cursor: pointer;}}
+        
+            .btn_2{@include btn-base();
+            background-color:#4C5FD5;
+            color: white;
+            margin-right: 1.5rem;
+            border: solid 1px $color-main;
+            &:hover{cursor: pointer;
+            background-color: #4c5ed5bd;}}
+    }}
+
+.container .main{
+    font-size: 4rem;}
+
+.container{
+    .menu{
+        h3{font-size: 1.5rem;}
+    }}
+
+.container .menu .card {
+border: none;
+width: 40%;
+    .learn-more{color: #4C5FD5;
+        &:hover{text-decoration: underline;}}
+    .icono1{width: 4rem;}
+    .icono2{width: 4rem;}
+    .icono3{width: 4rem;}
+    .icono4{width: 4rem;
+    height: 4rem;}
+    .icono5{width: 4rem}
+    .icono6{width: 4rem}}
+
+.container .menu  {
+    .uno{
+    @include para-iconos();}
+
+    .dos{@include para-iconos();
+    gap: 0.5rem;}
+
+    .tres{
+    @include para-iconos();}
+
+    .cuatro{
+    @include para-iconos();
+    gap: 0.25rem;}
+
+    .cinco{@include para-iconos();}
+
+    .seis{@include para-iconos();
+    gap: 0.5rem;}}
+
+.container .footer{
+    width: 100%;
+    color: white;
+
+    ul{list-style: none;
+    text-align: start ;
+    li {&:hover{text-decoration: underline;}}}
+    .abstract{margin-left: 1.5rem;}}
+    .company p{
+        &:hover{text-decoration: underline;}
+    }
+    
+.container .footer .titulo{
+margin-top: 2rem;
+height: 13rem;}
+
+.container .footer .company{
+    h5{padding-left: 1.9rem;}
+    p{padding-left: 1.9rem;}
+}
